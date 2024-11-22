@@ -1,138 +1,337 @@
-body{
+body {
     margin: 0%;
     padding: 5px;
-    background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 62%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(148, 147, 147, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-nav{
-    /* border: 1px solid black; */
+
+nav {
     padding: 5px;
     display: flex;
     vertical-align: center;
     position: relative;
 }
-/* #navIcon{
-    position: absolute;
-    right: 0%;
-    width: 70px;
-    height: 60px;
-} */
-nav ul{
-    /* border: 1px solid black; */
+
+#navIcon {
+    display: none;
+}
+
+nav ul {
     width: fit-content;
     padding: 5px;
     margin-left: auto;
     position: relative;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: black;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: 900;
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
     display: inline;
     margin-right: 40px;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     cursor: pointer;
 }
-#placeAnOrder{
+
+#placeAnOrder {
     font-size: 17px;
     padding: 10px;
     width: 230px;
     background-color: black;
     color: white;
-    font-family:cursive;
+    font-family: cursive;
     border-radius: 10px;
     border-style: none;
 }
-#placeAnOrder:hover{
+
+#placeAnOrder:hover {
     background: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgba(174,238,181,1) 0%, rgba(233,206,148,1) 100%);
+    background: radial-gradient(circle, rgba(174, 238, 181, 1) 0%, rgba(233, 206, 148, 1) 100%);
     color: rgb(255, 255, 255);
-    font-family:cursive;
+    font-family: cursive;
     border-radius: 10px;
     border-style: none;
     cursor: pointer;
 }
-#placeAnOrder:active{
+
+#placeAnOrder:active {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    font-family:cursive;
+    font-family: cursive;
     border-radius: 10px;
     border-style: none;
     cursor: pointer;
 }
-#logo{
+
+#logo {
     width: 80px;
     height: 70px;
 }
-#imgCoffee{
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
+
+#imgCoffee {
+    width: 500px;
+    height: 350px;
     margin-right: 20px;
 }
-.containText{
+
+.containText {
     display: inline-flex;
     margin-top: 80px;
 }
-#yCompany{
-    font-size: 30px;
+
+#yCompany {
+    font-size: 40px;
 }
-.QContain{
+
+.QContain {
     font-family: cursive;
+    line-height: 80px;
 }
-.imgContain img{
-    width: 100px;
-    height: 150px;
+
+.QContain div {
+    line-height: 0px;
+}
+
+.imgContain img {
+    width: 180px;
+    height: 190px;
     margin-right: 30px;
     margin-top: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 3px black;
+    box-shadow: 1px 1px 5px 1.5px rgb(167, 165, 165);
     border-style: none;
 }
-.imgContain img:hover{
-    box-shadow: 4px 4px 20px 6px black;
+
+.imgContain img:hover {
+    box-shadow: 2px 2px 10px 3px black;
     cursor: pointer;
 }
-.imgContain img:active{
-    box-shadow: 4px 4px 20px 6px rgb(255, 142, 142);
+
+.imgContain img:active {
+    box-shadow: 2px 2px 10px 3px rgb(255, 142, 142);
     cursor: pointer;
 }
-.imgContain{
+
+.imgContain {
     margin-left: 60px;
     margin-top: 40px;
 }
 
+#smallStoreM {
+    display: none;
+}
 
+#mediumStoreM {
+    display: none;
+}
 
-@media only screen and (max-width: 1200px) {
-    .containText{
+#mallStoreM {
+    display: none;
+}
+
+@media only screen and (max-width: 511px) {
+    .containText {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #navIcon {
         display: block;
+        margin-left: auto;
+        width: 70px;
+        height: 60px;
+    }
+
+    .imgContain img {
+        display: block;
+    }
+
+    #smallStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    #mediumStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    #mallStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    .imgContain {
+        width: 300px;
+        margin-right: auto;
+    }
+
+    .QContain {
+        text-align: left;
+        margin-right: auto;
+    }
+
+    #imgCoffee {
+        display: none;
+    }
+
+    #smallStore {
+        display: none;
+    }
+
+    #mediumStore {
+        display: none;
+    }
+
+    #mallStore {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 577px) {
+    .containText {
+        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 0px;
         width: 100%;
         border-radius: 10px;
         text-align: center;
     }
-    nav ul li a{
-        font-size: 10px;
+
+    nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 10px;
     }
-    #placeAnOrder{
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .imgContain {
+        margin-left: 20px;
+    }
+
+    .QContain {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .containText {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .imgContain {
+        margin-left: 20px;
+    }
+
+    .QContain {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .containText {
+        justify-content: center;
+        margin-top: 0px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    #placeAnOrder {
+        font-size: 6px;
+        width: 70px;
+    }
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .imgContain {
+        margin-left: 20px;
+    }
+
+    .QContain {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .containText {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    #placeAnOrder {
         font-size: 6px;
         width: 80px;
     }
-    .imgContain img{
-        width: 80px;
-        height: 120px;
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
     }
-    .imgContain{
+
+    .imgContain {
         margin-left: 20px;
     }
-    .QContain{
+
+    .QContain {
         margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1475px) {
+    .QContain div {
+        line-height: normal;
+        text-align: left;
     }
 }
