@@ -1,0 +1,168 @@
+@media only screen and (max-width: 511px) {
+    nav ul {
+        display: none;
+    }
+
+    #navIcon {
+        display: block;
+        margin-left: auto;
+        width: 70px;
+        height: 60px;
+    }
+
+    #smallStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    #mediumStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    #mallStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    .imgContain {
+        width: 300px;
+    }
+
+    .QContain {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    #imgCoffee {
+        display: none;
+    }
+
+    #smallStore {
+        display: none;
+    }
+
+    #mediumStore {
+        display: none;
+    }
+
+    #mallStore {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .imgContain {
+        margin-left: 20px;
+    }
+
+    .QContain {
+        margin-left: 20px;
+    }
+
+    .insideOurOff {
+        /*Do not remove*/
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spanEntre {
+        line-height: normal;
+        text-align: center;
+    }
+
+    .spanPara {
+        text-align: center;
+    }
+
+    #imgOurOff {
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .spanPara {
+        text-wrap: wrap;
+    }
+
+    .Entrepreneurs {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    #placeAnOrder {
+        font-size: 6px;
+        width: 70px;
+    }
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .imgContain {
+        margin-left: 20px;
+    }
+
+    .QContain {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .containText {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    #placeAnOrder {
+        font-size: 6px;
+        width: 80px;
+    }
+
+    .imgContain img {
+        width: 180px;
+        height: 190px;
+    }
+
+    .imgContain {
+        margin-left: 20px;
+    }
+
+    .QContain {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1475px) {
+    .QContain div {
+        line-height: normal;
+        text-align: left;
+    }
+}
