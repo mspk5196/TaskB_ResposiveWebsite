@@ -2,7 +2,7 @@ body {
     margin: 0%;
     padding: 5px;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(148, 147, 147, 1) 100%);
+    /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(148, 147, 147, 1) 100%); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -138,6 +138,51 @@ nav ul li:hover {
     display: none;
 }
 
+hr{
+    width: 100px;
+    height: 2px;
+    margin-top: 30px;
+    background-color:black;
+}
+#ourOff{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(56, 56, 56);
+}
+.insideOurOff{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.Entrepreneurs{
+    text-align: right;
+    /* border: 1px solid black; */
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+}
+.spanEntre{
+    line-height: 10px;
+    font-size: 30px;
+    font-family: cursive;
+    
+}
+.spanPara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:grey;
+    line-height: 30px;
+    width: fit-content;
+}
+.imgOurOff{
+    float: right;
+}
+#imgOurOff{
+    width: fit-content;
+}
 @media only screen and (max-width: 511px) {
     .containText {
         margin-top: 0px;
@@ -202,6 +247,24 @@ nav ul li:hover {
     #mallStore {
         display: none;
     }
+
+    .insideOurOff{
+        display: block;
+        position: absolute;
+    }
+    .spanEntre{
+        line-height: normal;
+        text-align: center;
+    }
+    .spanPara{
+        text-align: center;
+    }
+    #imgOurOff{
+        border: 1px solid black;
+    }
+    .spanPara{
+        text-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 577px) {
@@ -261,6 +324,23 @@ nav ul li:hover {
 
     .QContain {
         margin-left: 20px;
+    }
+    .insideOurOff{
+        display: block;
+        position: absolute;
+    }
+    .spanEntre{
+        line-height: normal;
+        text-align: center;
+    }
+    .spanPara{
+        text-align: center;
+    }
+    #imgOurOff{
+        border: 1px solid black;
+    }
+    .spanPara{
+        text-wrap: wrap;
     }
 }
 
