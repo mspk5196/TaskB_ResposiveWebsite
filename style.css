@@ -174,6 +174,23 @@ hr{
     line-height: 30px;
     width: fit-content;
 }
-/* .imgOurOff{
-   
-} */
+#imgLine1{
+    background-color: orange;
+    width: 160px;
+    height: 4px;
+}
+#imgLine2{
+    background-color: grey;
+    width: 160px;
+    height: 4px;
+}
+#imgLine3{
+    background-color: grey;
+    width: 160px;
+    height: 4px;
+}
+.LineDiv div{
+    display: inline-flex;
+    margin-right: 40px;
+    margin-left: 10px;
+}

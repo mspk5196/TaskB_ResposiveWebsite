@@ -101,6 +101,52 @@
     .Entrepreneurs {
         text-align: center;
     }
+
+    #smallStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    #mediumStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    #mallStoreM {
+        width: 270px;
+        height: 100px;
+        display: block;
+    }
+
+    .imgContain {
+        width: 300px;
+    }
+
+    .QContain {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    #imgCoffee {
+        display: none;
+    }
+
+    #smallStore {
+        display: none;
+    }
+
+    #mediumStore {
+        display: none;
+    }
+
+    #mallStore {
+        display: none;
+    }
+    .LineDiv{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
